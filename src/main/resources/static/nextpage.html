@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <link rel="stylesheet" href="/styles/nextpage.css">
+</head>
+<body>
+<nav>
+    <div class="logo"><a href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/ALTEN_logo.svg/800px-ALTEN_logo.svg.png" alt="">
+    </a></div>
+    <ul>
+        <li><a href="#">Emp id</a></li>
+        <li><a href="#">Emp name</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <table id="tasksTable">
+        <thead>
+        <tr>
+            <th>Weeks</th>
+            <th>Date</th>
+            <th>Teams</th>
+            <th>Tasks</th>
+            <th>Total Hours</th>
+            <th>Remarks</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="text" name="Weeks" placeholder="Weeks"></td>
+            <td><input type="date" name="date"></td>
+            <td>
+                <select name="Teams" id="">
+                    <option value="teams"></option>
+                    <option value="DCN">DCN</option>
+                    <option value="SCP">SCP</option>
+                    <option value="SNOTES">S NOTES</option>
+                    <option value="TB CLEAN-UP">TB CLEAN-UP</option>
+                    <option value="ARGUS">ARGUS</option>
+                    <option value="Vendor Assembly">VENDOR ASSEMBLY</option>
+                    <option value="Deviation">DEVIATION</option>
+                    <option value="Automation">AUTOMATION</option>
+                </select>
+            </td>
+            <td><input type="text" name="text" placeholder="Enter the tasks"></td>
+            <td><input type="number" name="totalHours" placeholder="Enter worked hours"></td>
+            <td><input type="text" name="Remarks" placeholder="Remarks"></td>
+            <td><button type="button" class="editBtn">Edit</button></td>
+        </tr>
+        </tbody>
+
+        <tbody>
+        <tr>
+            <td><input type="text" name="Weeks" placeholder="Weeks"></td>
+            <td><input type="date" name="date"></td>
+            <td>
+                <select name="Teams" id="Teams">
+                    <option value="teams"></option>
+                    <option value="DCN">DCN</option>
+                    <option value="SCP">SCP</option>
+                    <option value="SNOTES">S NOTES</option>
+                    <option value="TB CLEAN-UP">TB CLEAN-UP</option>
+                    <option value="ARGUS">ARGUS</option>
+                    <option value="Vendor Assembly">VENDOR ASSEMBLY</option>
+                    <option value="Deviation">DEVIATION</option>
+                    <option value="Automation">AUTOMATION</option>
+                </select>
+            </td>
+            <td><input type="text" name="text" placeholder="Enter the tasks"></td>
+            <td><input type="number" name="totalHours" placeholder="Enter worked hours"></td>
+            <td><input type="text" name="Remarks" placeholder="Remarks"></td>
+            <td><button type="button" class="editBtn">Edit</button></td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- Add "+" and "-" buttons -->
+    <button type="button" id="addTaskBtn">+</button>
+    <button type="button" id="removeTaskBtn">-</button>
+
+    <button type="submit">Submit</button>
+</div>
+<script src="/scripts/Javascript.js" defer></script>
+</body>
+</html>
